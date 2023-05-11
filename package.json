@@ -32,7 +32,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json,html}\" .prettierrc --config ./.prettierrc",
+    "format": "npm run lint:fix && npm run prettier:fix"
   },
   "eslintConfig": {
     "extends": [

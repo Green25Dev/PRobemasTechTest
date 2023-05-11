@@ -1,20 +1,20 @@
-import { CUSTOMER_REGIST } from "../types";
+import { CUSTOMER_REGIST } from "../types"
 
 const initialState = {
   customers: [],
-};
+}
 
 const customerReducer = (state = initialState, action) => {
   switch (action.type) {
     case CUSTOMER_REGIST:
       return {
         ...state,
-        customers: action.payload
-      };
+        customers: action.payload,
+      }
 
     default:
-      return state;
+      return state
   }
-};
+}
 
-export default customerReducer;
+export default customerReducer

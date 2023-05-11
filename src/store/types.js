@@ -1,2 +1,2 @@
-export const CUSTOMER_REGIST = "CUSTOMER_REGIST";
-export const SET_STORES = "SET_STORES";
+export const CUSTOMER_REGIST = "CUSTOMER_REGIST"
+export const SET_STORES = "SET_STORES"

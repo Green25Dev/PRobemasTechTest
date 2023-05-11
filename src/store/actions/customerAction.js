@@ -1,6 +1,6 @@
-import { CUSTOMER_REGIST } from "../types";
+import { CUSTOMER_REGIST } from "../types"
 
 export const customerRegistAction = (customerInfo) => ({
-  type: CUSTOMER_REGIST, 
-  payload: customerInfo
-});
+  type: CUSTOMER_REGIST,
+  payload: customerInfo,
+})
