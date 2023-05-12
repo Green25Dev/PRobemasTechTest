@@ -1,6 +1,6 @@
-import { CUSTOMER_REGIST } from "../types"
+import { SET_CURRENCY } from "../types"
 
-export const customerRegistAction = (customerInfo) => ({
-  type: CUSTOMER_REGIST,
-  payload: customerInfo,
+export const storeCurrency = (currency) => ({
+  type: SET_CURRENCY,
+  payload: currency,
 })

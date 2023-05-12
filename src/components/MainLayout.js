@@ -7,7 +7,6 @@ function MainLayout({ children }) {
     <React.Fragment>
       <CssBaseline />
       <ResponsiveAppBar />
-
       {children}
     </React.Fragment>
   )

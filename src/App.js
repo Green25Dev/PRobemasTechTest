@@ -4,13 +4,11 @@ import { Provider } from "react-redux"
 import { SWRConfig } from "swr"
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import { Switch, Route, BrowserRouter } from "react-router-dom"
+import { Route, BrowserRouter } from "react-router-dom"
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs"
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider"
-import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute"
 import { ThemeProvider } from "@mui/material/styles"
 import { CssBaseline, CircularProgress, Grid } from "@mui/material"
-import routes from "./routes"
 import { store } from "./store/store"
 import "./App.css"
 import { themeBackground } from "./consts/style"
@@ -53,18 +51,7 @@ function App() {
                       </Grid>
                     </Grid>
                   }
-                >
-                  <Switch>
-                    {routes.map(({ component, path, exact }, index) => (
-                      <ProtectedRoute
-                        key={index}
-                        path={path}
-                        component={component}
-                        exact={exact}
-                      />
-                    ))}
-                  </Switch>
-                </Suspense>
+                ></Suspense>
               </ThemeProvider>
             </SWRConfig>
 

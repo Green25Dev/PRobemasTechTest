@@ -1,2 +1,3 @@
 export const CUSTOMER_REGIST = "CUSTOMER_REGIST"
 export const SET_STORES = "SET_STORES"
+export const SET_CURRENCY = "SET_CURRENCY"
